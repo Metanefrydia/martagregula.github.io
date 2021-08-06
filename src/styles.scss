@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --theme-violet: #af9dcc;
+    --theme-blue: #9da8cc;
+    --theme-green: #9dccc1;
+    --theme-black: #000000;
+    --theme-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
