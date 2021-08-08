@@ -1,0 +1,21 @@
+.project-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4vw;
+}
+
+.project-container:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1050px) {
+  .project-container {
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 550px) {
+  .project-container {
+    margin-bottom: 32px;
+  }
+}

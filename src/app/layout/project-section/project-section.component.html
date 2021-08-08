@@ -1,1 +1,3 @@
-<p>project-section works!</p>
+<a id="projects"></a>
+<app-divider [sectionName]="'Projects'"></app-divider>
+<app-project-card *ngFor="let project of projects" [project]="project" class="project-container"></app-project-card>

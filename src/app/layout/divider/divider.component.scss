@@ -1,0 +1,29 @@
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 32px 0;
+}
+
+.divider__decoration {
+  width: 20vw;
+  border-bottom: 3px solid var(--theme-black);
+}
+
+.divider__text {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 0 2vw;
+}
+
+@media (max-width: 600px) {
+  .divider {
+    margin: 24px 0;
+  }
+
+  .divider__text {
+    font-size: 16px;
+  }
+}

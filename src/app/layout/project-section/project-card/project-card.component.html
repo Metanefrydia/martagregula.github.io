@@ -1,1 +1,20 @@
-<p>project-card works!</p>
+<div class="project">
+  <img class="project__image" src="./assets/images/projects/{{project.name | trim}}.png" />
+
+  <div class="project__content">
+    <div class="project__header">
+      <h2 class="project__title">{{ project.name }}</h2>
+      <div class="links">
+        <a *ngFor="let link of project.links" [href]="link.url">
+          <img [src]="'./assets/images/icons/' + link.type + '.svg'" />
+        </a>
+      </div>
+    </div>
+
+    <div class="project__tags">
+      <div *ngFor="let tag of project.technologies" [class]="'tag tag--' + tag.category">{{ tag.name }}</div>
+    </div>
+
+    <p class="project__description">{{ project.description }}</p>
+  </div>
+</div>
