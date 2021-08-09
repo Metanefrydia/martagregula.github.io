@@ -1,1 +1,7 @@
-<p>skill-section works!</p>
+<app-divider [sectionName]="'Skills'"></app-divider>
+<div id="skill-section" class="skills">
+  <div *ngFor="let skill of skills" class="skill">
+    <img src="./assets/images/icons/{{skill | trim}}.svg" class="skill__icon" />
+    <p class="skill__name">{{ skill }}</p>
+  </div>
+</div>
