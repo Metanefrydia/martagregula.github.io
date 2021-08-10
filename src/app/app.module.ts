@@ -12,6 +12,9 @@ import { ProjectSectionComponent } from './layout/project-section/project-sectio
 import { ProjectCardComponent } from './layout/project-section/project-card/project-card.component';
 import { TrimPipe } from './shared/pipes/trim.pipe';
 import { DividerComponent } from './layout/divider/divider.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { DividerComponent } from './layout/divider/divider.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    CommonModule,
+    HttpClientModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],

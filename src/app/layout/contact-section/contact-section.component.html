@@ -1,1 +1,22 @@
-<p>contact-section works!</p>
+<a id="contact"></a>
+<app-divider [sectionName]="'Contact'"></app-divider>
+<div class="contact-form">
+  <form [formGroup]="contactForm" (ngSubmit)="sendEmail($event)" class="form-group">
+    <h2>Get in touch</h2>
+    <h5>
+      Interested in working together? Feel free to contact and ask me any
+      questions.
+    </h5>
+    <div class="form-group__inputs">
+      <div class="form-group__inputs--single">
+        <input placeholder="Name *" type="text" formControlName="name" name="name" />
+        <input placeholder="Subject" type="text" formControlName="subject" name="subject" />
+        <input placeholder="Email *" type="email" formControlName="email" name="email" />
+      </div>
+      <textarea placeholder="Message *" formControlName="message" name="message"></textarea>
+    </div>
+    <button type="submit" class="submit-button" [disabled]="contactForm.invalid">
+      Send
+    </button>
+  </form>
+</div>
