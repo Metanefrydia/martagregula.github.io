@@ -40,7 +40,7 @@ textarea {
 
 .submit-button {
   width: 100px;
-  margin-top: 32px;
+  margin: 32px 0;
 }
 
 .submit-button:disabled {
@@ -60,7 +60,6 @@ h2 {
 
 h5 {
   margin-bottom: 28px;
-  width: 53vw;
   display: flex;
   flex-wrap: wrap;
   white-space: break-spaces;
