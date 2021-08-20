@@ -65,6 +65,10 @@ h5 {
   white-space: break-spaces;
 }
 
+.message-status {
+  margin-bottom: 0px;
+}
+
 @media (max-width: 1050px) {
   .form-group__inputs {
     flex-direction: column;

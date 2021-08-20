@@ -17,6 +17,10 @@
   flex-direction: column;
 }
 
+h1 {
+  margin-bottom: 16px;
+}
+
 @media (max-width: 800px) {
   h1 {
     font-size: 48px;

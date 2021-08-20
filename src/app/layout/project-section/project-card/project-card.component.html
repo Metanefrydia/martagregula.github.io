@@ -5,7 +5,7 @@
     <div class="project__header">
       <h2 class="project__title">{{ project.name }}</h2>
       <div class="links">
-        <a *ngFor="let link of project.links" [href]="link.url">
+        <a *ngFor="let link of project.links" [href]="link.url" target="_blank">
           <img class="icon" [src]="'./assets/images/icons/' + link.type + '.svg'" />
         </a>
       </div>
